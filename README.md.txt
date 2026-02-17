@@ -1,2 +1,0 @@
-Este repositorio simula el trabajo de una QA dentro de un proyecto real. Contiene casos de prueba documentados y una carpeta destinada a evidencias de testing.  
-Su finalidad es aplicar prácticas de testing y demostrar organización, documentación de pruebas. 
