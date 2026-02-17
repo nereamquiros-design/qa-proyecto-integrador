@@ -1,0 +1,249 @@
+TC1- Validar Registro Exitoso
+RESUMEN: Se verifica que el sistema acepte nombre de usuario entre 5 y 15 caracteres
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario y contraseña válidos
+3- Hacer click en Register
+RESULTADO ESPERADO: Registration is successful
+ESTADO: Pasa
+
+TC2- Debería Fallar Cuando Usuario es Corto
+RESUMEN: Se prueba el registro de usuario con un nombre muy corto
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario corto y contraseña válida
+3- Hacer click en Register
+RESULTADO ESPERADO: ¨Invalid Username¨
+ESTADO: No pasa
+
+TC3- Debería Fallar Cuando Usuario es Largo
+RESUMEN: Se prueba el registro de usuario con un nombre muy largo
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario largo y contraseña válida
+3- Hacer click en Register
+RESULTADO ESPERADO: ¨Invalid Username¨
+ESTADO: No pasa
+
+TC4- Validar Cuando Usuario Con Caracteres y Password Valido
+RESUMEN: Se prueba el registro de usuario con caracteres especiales
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario con caracter  y contraseña válida
+3- Hacer click en Register
+RESULTADO ESPERADO: Invalid user
+ESTADO: No pasa
+
+TC5- Validar Cuando Usuario Con Numeros y Password Valido
+RESUMEN: Se prueba el registro de usuario con numeros
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario numérico y contraseña válida
+3- Hacer click en Register
+RESULTADO ESPERADO: Registration is successful
+ESTADO: Pasa
+
+TC6- Debería Fallar Cuando Mail Valido y Password Inválido
+RESUMEN: Se prueba el registro de password invalido
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario válido y contraseña invalida(solo letras)
+3- Hacer click en Register
+RESULTADO ESPERADO: Debe aparecer un cartel de error
+ESTADO: Pasa
+
+TC7- Debería Fallar Cuando Mail Valido y Password Corto
+RESUMEN: Se prueba el registro de password corto
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario válido y contraseña invalida(corta)
+3- Hacer click en Register 
+RESULTADO ESPERADO: Debe aparecer un cartel de error
+ESTADO: Pasa
+
+TC8- Deberia Fallar Cuando Datos Incompletos
+RESUMEN: Se prueba el registro sin completar los datos: First Name y Last Name
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario y contraseña validos, NO completar los datos
+3- Hacer click en Register 
+RESULTADO ESPERADO: Debe aparecer un cartel de ´´campo obligatorio´´
+ESTADO: No pasa
+
+TC9- Validar Cuando Mail Con Mayusculas Y Password Valido
+RESUMEN: Se prueba el registro con mail en mayuscula 
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario en mayuscula y contraseña valido
+3- Hacer click en Register 
+RESULTADO ESPERADO: Registration is successful
+ESTADO: Pasa
+
+TC10- Validar Cuando Mail Sin @ y Password Valido
+RESUMEN: Se prueba el registro con mail sin @ 
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- En home, apretar Register
+2- Completar el formulario con usuario sin @ y contraseña valido
+3- Hacer click en Register 
+RESULTADO ESPERADO: Registration is successful
+ESTADO: Pasa
+
+TC11- Validar Registro Exitoso
+RESUMEN: Añadir registro de edad válida: 18
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos válidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Formulario enviado exitosamente
+ESTADO: Pasa
+
+TC12- Debería Fallar Cuando Edad es Invalida
+RESUMEN: Añadir registro de edad inválida: 17
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos inválidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: No Pasa
+
+TC13- Validar Registro Exitoso
+RESUMEN: Añadir registro de edad valida: 20
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos válidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Formulario enviado exitosamente
+ESTADO: Pasa
+
+TC14- Debería Fallar Cuando Edad Vacio
+RESUMEN: Añadir registro de edad inválida: vacio
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos inválidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: No Pasa
+
+TC15- Validar Registro Exitoso
+RESUMEN: Añadir registro de edad valida: 110
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos válidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Formulario enviado exitosamente
+ESTADO: Pasa
+
+TC16- Debería Fallar Cuando Edad es Invalida
+RESUMEN: Añadir registro de edad inválida: 121
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos inválidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: No Pasa
+
+TC17- Debería Fallar Cuando Edad es Invalida
+RESUMEN: Añadir registro de edad invalida: 5
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos inválidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: No Pasa
+
+TC18- Validar Registro Exitoso
+RESUMEN: Añadir registro de edad valida: 30
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con datos inválidos
+3- Hacer click en Submit
+RESULTADO ESPERADO: Formulario enviado exitosamente
+ESTADO: Pasa
+
+TC19- Validar Login Exitoso
+RESUMEN: Realizar Login correcto
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar username y password con datos válidos
+3- Hacer click en Login
+RESULTADO ESPERADO: Registro exitoso
+ESTADO: Pasa
+
+TC20- Login Incorrecto Una Vez
+RESUMEN: Realizar login incorrecto una vez
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar username y password con datos inválidos
+3- Hacer click en Login
+RESULTADO ESPERADO: Your password is invalid
+ESTADO: Pasa
+
+TC21- Debería Fallar Login Incorrecto Dos Veces
+RESUMEN: Realizar login incorrecto 2 veces seguidas
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar username y password con datos inválidos
+3- Hacer click en Login
+RESULTADO ESPERADO: Your password is invalid
+ESTADO: Pasa
+
+TC22- Debería Fallar Login Incorrecto Tres Veces
+RESUMEN: Realizar login incorrecto 3 veces seguidas
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar username y password con datos inválidos (3 veces)
+3- Hacer click en Login
+RESULTADO ESPERADO: Acceso bloqueado
+ESTADO: No pasa
+
+TC23- Validar Login Correcto Tras Bloqueo
+RESUMEN: tras bloqueo, intentar login correcto
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Luego de ingresar 3 veces mal la contraseña, se completa username y password con datos válidos
+3- Hacer click en Login
+RESULTADO ESPERADO: Registro exitoso
+ESTADO: Pasa
+
+TC24- Validar Login Correcto Tras Bloqueo
+RESUMEN: Realizar login correcto + logout
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar username y password con datos válidos
+3- Hacer click en Login
+RESULTADO ESPERADO: Registro exitoso
+ESTADO: Pasa
+
+TC25- Debería Fallar Nombre Vacio
+RESUMEN: Validar campo nombre vacío
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar formulario sin nombre 
+3- Hacer click en Submit
+RESULTADO ESPERADO: Muestra cartel de error
+ESTADO: No pasa
