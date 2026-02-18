@@ -98,85 +98,93 @@ PASOS DE EJECUCIÓN:
 RESULTADO ESPERADO: Registration is successful
 ESTADO: Pasa
 
-TC11- Validar Registro Exitoso
-RESUMEN: Añadir registro de edad válida: 18
+TC11- Edad Por Debajo Del Mínimo
+RESUMEN: Validar que el sistema rechaza edad menor a 18
 PRECONDICIONES: -
 PASOS DE EJECUCIÓN:
 1- Ingresar a la página 
-2- Completar el formulario con datos válidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Formulario enviado exitosamente
+2- Completar el formulario con edad:17
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Rechaza envío
 ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto"
 
-TC12- Debería Fallar Cuando Edad es Invalida
-RESUMEN: Añadir registro de edad inválida: 17
+TC12- Edad Del Mínimo Permitido
+RESUMEN: Validar aceptación en el límite inferior
 PRECONDICIONES: -
 PASOS DE EJECUCIÓN:
 1- Ingresar a la página 
-2- Completar el formulario con datos inválidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Registro de edad inválido
-ESTADO: No Pasa
-
-TC13- Validar Registro Exitoso
-RESUMEN: Añadir registro de edad valida: 20
-PRECONDICIONES: -
-PASOS DE EJECUCIÓN:
-1- Ingresar a la página 
-2- Completar el formulario con datos válidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Formulario enviado exitosamente
+2- Completar el formulario con edad: 18
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad válido
 ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
 
-TC14- Debería Fallar Cuando Edad Vacio
-RESUMEN: Añadir registro de edad inválida: vacio
+TC13- Edad Dentro Del Rango Permitido
+RESUMEN: Validar aceptación dentro del rango
 PRECONDICIONES: -
 PASOS DE EJECUCIÓN:
 1- Ingresar a la página 
-2- Completar el formulario con datos inválidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Registro de edad inválido
-ESTADO: No Pasa
-
-TC15- Validar Registro Exitoso
-RESUMEN: Añadir registro de edad valida: 110
-PRECONDICIONES: -
-PASOS DE EJECUCIÓN:
-1- Ingresar a la página 
-2- Completar el formulario con datos válidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Formulario enviado exitosamente
+2- Completar el formulario con edad:19
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad válido
 ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
 
-TC16- Debería Fallar Cuando Edad es Invalida
-RESUMEN: Añadir registro de edad inválida: 121
+TC14- Edad Por Debajo Del Máximo Permitido
+RESUMEN: Validar aceptación dentro del rango
 PRECONDICIONES: -
 PASOS DE EJECUCIÓN:
 1- Ingresar a la página 
-2- Completar el formulario con datos inválidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Registro de edad inválido
-ESTADO: No Pasa
-
-TC17- Debería Fallar Cuando Edad es Invalida
-RESUMEN: Añadir registro de edad invalida: 5
-PRECONDICIONES: -
-PASOS DE EJECUCIÓN:
-1- Ingresar a la página 
-2- Completar el formulario con datos inválidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Registro de edad inválido
-ESTADO: No Pasa
-
-TC18- Validar Registro Exitoso
-RESUMEN: Añadir registro de edad valida: 30
-PRECONDICIONES: -
-PASOS DE EJECUCIÓN:
-1- Ingresar a la página 
-2- Completar el formulario con datos inválidos
-3- Hacer click en Submit
-RESULTADO ESPERADO: Formulario enviado exitosamente
+2- Completar el formulario con edad: 79
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad válido
 ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
+
+TC15- Edad Máxima Permitida
+RESUMEN: Validar aceptación en el límite superior
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con edad: 80
+3- Hacer click en Enviar
+RESULTADO ESPERADO:Registro de edad válido
+ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
+
+TC16- Edad Por Encima Del Permitido
+RESUMEN: Validar que el sistema rechaza edad mayor a 80
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con edad: 81
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
+
+TC17- Edad Vacia
+RESUMEN: Validar que el sistema rechaza campo vacío
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con edad: vacío
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
+
+TC18- Edad Con Valor No Numérico
+RESUMEN: Validar que el sistema rechaza carácter no numérico
+PRECONDICIONES: -
+PASOS DE EJECUCIÓN:
+1- Ingresar a la página 
+2- Completar el formulario con Edad: .
+3- Hacer click en Enviar
+RESULTADO ESPERADO: Registro de edad inválido
+ESTADO: Pasa
+OBSERVACIÓN: El sistema rechaza apellido con mensaje "apellido demasiado corto" 
 
 TC19- Validar Login Exitoso
 RESUMEN: Realizar Login correcto
